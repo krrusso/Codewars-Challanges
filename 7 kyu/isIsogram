@@ -1,0 +1,15 @@
+function isIsogram(str){
+	str = str.toLowerCase();
+  for (var outside=0; outside <= str.length; outside++){
+  	console.log('outside' + outside);
+  	for (var inside = str.length; inside >= 0; inside--) {
+  		console.log('inside' + inside);
+  		if (inside != outside && str.charAt(inside) == str.charAt(outside)){
+  			return false;
+  	}
+  }
+}
+return true;
+}
+var test = isIsogram('alotbignn');
+console.log(test);
